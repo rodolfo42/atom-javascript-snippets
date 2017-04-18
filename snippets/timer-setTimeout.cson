@@ -2,7 +2,7 @@
   "setTimeout":
     "prefix": "st"
     "body": """
-    setTimeout(function() {
+    setTimeout(() => {
     \t${0:// body...}
     }, ${1:delay});
     """

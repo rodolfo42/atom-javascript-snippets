@@ -60,7 +60,7 @@ debugger;
 ### [ae] addEventListener
 
 ```javascript
-${1:document}.addEventListener('${2:event}', function(e) {
+${1:document}.addEventListener('${2:event}', (e) => {
 	${0:// body...}
 });
 ```
@@ -172,7 +172,7 @@ ${1:document}.querySelectorAll('${2:selector}');
 ### [fe] forEach
 
 ```javascript
-${1:myArray}.forEach(function(${2:elem}) {
+${1:myArray}.forEach((${2:elem}) => {
 	${0:// body...}
 });
 ```
@@ -200,7 +200,7 @@ function ${1:methodName} (${2:arguments}) {
 ### [afn] anonymous function
 
 ```javascript
-function(${1:arguments}) {
+(${1:arguments}) => {
 	${0:// body...}
 }
 ```
@@ -208,7 +208,7 @@ function(${1:arguments}) {
 ### [pr] prototype
 
 ```javascript
-${1:ClassName}.prototype.${2:methodName} = function(${3:arguments}) {
+${1:ClassName}.prototype.${2:methodName} = (${3:arguments}) => {
 	${0:// body...}
 }
 ```
@@ -216,7 +216,7 @@ ${1:ClassName}.prototype.${2:methodName} = function(${3:arguments}) {
 ### [iife] immediately-invoked function expression
 
 ```javascript
-(function(${1:window}, ${2:document}) {
+((${1:window}, ${2:document}) => {
 	${0:// body...}
 })(${1:window}, ${2:document});
 ```
@@ -236,7 +236,7 @@ ${1:methodName}.apply(${2:context}, [${3:arguments}])
 ### [ofn] function as a property of an object
 
 ```javascript
-${1:functionName}: function(${2:arguments}) {
+${1:functionName}: (${2:arguments}) => {
 	${3:// body...}
 }
 ```
@@ -260,7 +260,7 @@ JSON.stringify(${1:obj});
 ### [si] setInterval
 
 ```javascript
-setInterval(function() {
+setInterval(() => {
 	${0:// body...}
 }, ${1:delay});
 ```
@@ -268,7 +268,7 @@ setInterval(function() {
 ### [st] setTimeout
 
 ```javascript
-setTimeout(function() {
+setTimeout(() => {
 	${0:// body...}
 }, ${1:delay});
 ```
@@ -315,14 +315,14 @@ require('${1:module}');
 ### [desc] describe
 
 ```javascript
-describe('${1:description}', function() {
+describe('${1:description}', () => {
 	${0:// body...}
 });
 ```
 ### [ita] it asynchronous
 
 ```javascript
-it('${1:description}', function(done) {
+it('${1:description}', (done) => {
 	${0:// body...}
 });
 ```
@@ -330,7 +330,7 @@ it('${1:description}', function(done) {
 ### [its] it synchronous
 
 ```javascript
-it('${1:description}', function() {
+it('${1:description}', () => {
 	${0:// body...}
 });
 ```
